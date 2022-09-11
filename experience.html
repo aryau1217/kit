@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/19742.jpg);
+  background-size: 15%;
+  background-repeat: repeat;
+  background-color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px;
+}
+
+.footerstyle {
+  border-style: outset;
+  border-radius: 15px 50px 30px;
+  background-color: rgba(245, 242, 222, 0.7);
+  padding: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+ .wrapper table {
+    text-align: left;
+    padding:16px;
+} 
+
+.wrapper {
+    position: relative;
+    width: 960px;
+    padding: 20px;
+}
+
+ .wrapper img {
+    border-style:groove ;
+}
+
+
+
+/* text to be put here */
+section {
+    background: #ffffff;
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 0;
+    left: 230px;
+    width: 840px;
+    min-height: 550px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+section:first-of-type {
+    display: block;
+
+}
+
+nav {
+    float: left;
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* section title button unselected */
+li {
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left:10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid #255, 255, 255, 0.5;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+.active {
+    background: rgba(51, 51, 51, 0.5);
+}
+
+/* Header/Blog Title */
+.header {
+    background-image: url(images/london.png);
+  background-size: 30%;
+  background-position: 0 60px;
+  border-radius: 15px 50px 30px;
+  border-radius: 15px 50px 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+#more {display: none;}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  border-radius: 15px 50px 30px;
+  overflow: hidden;
+  background-color: rgb(51, 51, 51);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+transform: scale(1.15);
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  line-height: 1.6;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.contact table, th, td {
+  padding: 8px 16px 8px 0;
+  transition: .2s;
+}
+
+.contact td:hover {
+  transform: scale(1.1);
+}
+
+.skills {
+  float: left;
+  padding: 15px;
+  cursor: crosshair;
+  opacity:0.7;
+}
+
+.skills:hover {
+  opacity: 1.0;
+  transform: scale(1.5);
+}
+
+.hobbiesicon {
+  float: left;
+  padding: 15px;
+  cursor: crosshair;
+  opacity:0.7;
+  transition:.2s;
+}
+
+.hobbiesicon:hover {
+  opacity: 1.0;
+  transform: scale(1.5);
+}
+
+.spokenlan p {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 16px;
+  cursor: crosshair;
+  text-align:center;
+  transition: .2s;
+}
+
+.spokenlan p:hover {
+    transform: scale(1.1);
+}
+
+
+/* Add a card effect for articles */
+.card {
+  border-style: outset;
+  border-radius: 15px 50px 30px;
+  background-color: rgba(245, 242, 222, 0.7);
+  padding: 30px;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.exx {
+  border-style: outset;
+  border-radius: 15px 50px 30px;
+  background-color: rgba(245, 242, 222, 0.7);
+  padding: 30px;
+  margin-top: 20px;
+  min-height: 1400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="background">
+    <div class="header">
+      <h1>Hello! I am Kit.</h1>
+      <h2>Junior Developer based in London.</h2>
+    </div>
+    
+    <div class="topnav">
+      <a href="/index.html">Home</a>
+      <a href="/experience.html">Experience</a>
+      <!-- <a href="#">Link</a> -->
+      <a href="images/KIT_Resume.pdf"download style="float:right">Resume</a>
+    </div>
+    
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="exx">
+          <h2>WORKING EXPERIENCE</h2>
+          <h4>13 years</h4>
+
+          <div class="wrapper">
+
+            <nav>
+              <ul>
+                <li data-rel="1" class="active">GENTLE MONSTER</li>
+                <li data-rel="2">MUJI LONDON</li>
+                <li data-rel="3">FORTUNE STAR HK</li>
+                <li data-rel="4">DIL HK</li>
+              </ul>
+            </nav>
+          
+            <section>
+              <article>
+                <table>
+                <tr><th><img src="images/gentlemonster.png" alt="gentlemonster" style="height: 150px; border-radius: 15px;"></th>
+                <th><h2>Gentle Monster London <br>Concession Supervisor <br>2020 - Now</h2></th></tr>
+                </table>
+                <img src="images/gentlemonster2.png" alt="gentlemonster2" style="height:300px;border-radius:15px; position: relative; left:120px;">
+                <table>
+                  <tr>
+                    <th><h3>Experience</h3></th>
+                    <th><h3>Responsibities</h3></th>
+                    <th><h3>Lessons</h3></th>
+                  </tr>
+                  <tr>
+                    <th>A luxury eyewear brand, operating under a unique philosophy. Unique “weird beauty” store and glasses design attracts a lot of attention from design blogs.</th>
+                    <th>Supervising a team of 7, delegating duties and responsibilities to sales team ensuring they deliver and complete to the best standard in a timely manner.</th>
+                    <th>Being a figure in the team. When you are a leader there is nowhere you can hide. Stand still and confront everything for the team and the business. Always understand every individual, with different people use different approaches. Admitting your weaknesses,ask for support when needed and keep learning.</th>
+                  </tr>
+                </table>
+              </article>
+            </section>
+          
+            <section>
+              <article>
+
+                <table>
+                  <tr><th><img src="images/mujilogo.jpeg" alt="mujilogo" style="height: 150px;border-radius: 15px;"></th>
+                  <th><h2>Muji London <br>Sales Assistant <br>2019 - 2020</h2></th></tr>
+                  </table>
+                  <img src="images/muji2.jpg" alt="muji2" style="height: 300px;border-radius: 15px; position: relative; left:120px;">
+                  <table>
+                    <tr>
+                      <th><h3>Experience</h3></th>
+                      <th><h3>Responsibities</h3></th>
+                      <th><h3>Lessons</h3></th>
+                    </tr>
+                    <tr>
+                      <th>A Japanese houseware brand offers a variety of good quality items from stationery to household items. MUJI in Japanese, translates as “no-brand, quality goods."</th>
+                      <th>Providing high level of customer service, greeting and assisting clients, responding to enquiry and carrying out product sales, performing cashier and stockroom duties</th>
+                      <th>Great Interpersonal skills & custumer Service technique. Working under pressure on the frontline and deliver the same working quality every single sec.</th>
+                    </tr>
+                  </table>
+
+              </article>
+            </section>
+          
+            <section>
+              <article>
+                <table>
+                  <tr><th><img src="images/fsml_logo.png" alt="fsml_logo" style="height: 150px;border-radius: 15px;"></th>
+                  <th><h2>Fortune Star Media Ltd<br>Sales Administrative Executive<br>2012 - 2018</h2></th></tr>
+                  </table>
+                  <img src="images/fsml2.jpg" alt="fsml2" style="height: 300px;border-radius: 15px; position: relative; left:120px;">
+                  <table>
+                    <tr>
+                      <th><h3>Experience</h3></th>
+                      <th><h3>Responsibities</h3></th>
+                      <th><h3>Lessons</h3></th>
+                    </tr>
+                    <tr>
+                      <th>A film distribution company that has the largest contemporary film library includes over 700 major movies that showcase superstars such as Bruce Lee, Jackie Chan. We invested heavily on film restoration and preservation of the library. A large amount of the classic films are now fully restored and ready in HD, 2K or even 4K. At present, the Bruce Lee series are available in full 4K.</th>
+                      <th>As an administrator I worked in every single aspect of the company. Tiny as administration paper work, maintainance of the office preperties. Large as the film restoration projects by handling the entire film restoration work. I have done a few movies that took years. I also managed the the official YouTube Channel which has over 8,000 subscribers at the time, taking care of the copyright and profit of the channel.</th>
+                      <th>It was a "zero mistake allowed" working environment. Films were sold and broadcasted all over the world. Imagined showcasing content in politically sensitive countries. If you forgot to remove one dialogue or scene it could cost you a million worth business deal. I am still excited everytime thinking about this job. It's a shame I had to leave this job because I wanted to move to London to experience something new. </th>
+                    </tr>
+                  </table>
+                  <a href="https://www.youtube.com/user/fortunestarmedia/videos">Click to see the Youtube channel</a>
+              </article>
+            </section>
+          
+            <section>
+              <article>
+                <table>
+                  <tr><th><img src="images/DJLlogo.jpg" alt="DJLlogo" style="height: 150px; width: 300px;border-radius: 15px;"></th>
+                  <th><h2>DIL<br>Office Clerk<br>2009 - 2012</h2></th></tr>
+                  </table>
+                  <img src="images/DJL2.jpg" alt="DJL2" style="height: 300px; border-radius: 15px; position: relative; left:120px;">
+                  <table>
+                    <tr>
+                      <th><h3>Experience</h3></th>
+                      <th><h3>Responsibities</h3></th>
+                      <th><h3>Lessons</h3></th>
+                    </tr>
+                    <tr>
+                      <th>Luxury jewllery retail store based in Hong Kong. Has a strong customer base because of its focus on design, in-store & after service.</th>
+                      <th>Providing administration support to the office and showroom operation. Assisting in graphic design of showroom advertisement. Attending incoming phone calls and responding to inquiries, greeting guests.</th>
+                      <th>It was a really intense work but priceless experience at that young age for me. I worked 6 days a week and on all bank holidays I always needed to be ready. 15 hours a day when it was peak reasons. Even though it was tough but you had a great team and same target to achieve goals and objectives, you'd almost forget you are working!</th>
+                    </tr>
+                  </table>
+              </article>
+            </section>
+          
+            <script>
+                (function($) {
+                    $('nav li').click(function() {
+                      $(this).addClass('active').siblings('li').removeClass('active');
+                      $('section:nth-of-type('+$(this).data('rel')+')').stop().fadeIn(400, 'linear').siblings('section').stop().fadeOut(400, 'linear'); 
+                    });
+                  })(jQuery);
+            </script>
+          </div>
+
+          <!-- <h1 style="padding-top:1000px">this is to make the div bigger</h1> -->
+          
+        </div>
+      </div>
+      
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="contact">
+          <h2>CONTACT</h2>
+          <table>
+            <tr>
+              <th><img src="images/name.png" alt="nameicon" style="width:30px;" title="NAME"></th>
+              <td>MR. CHUN KIT YAU (KIT)</td>
+            </tr>
+            <tr>
+              <th><img src="images/location.png" alt="locaticon" style="width:30px;" title="LOCATION"></th>
+              <td>LONDON</td>
+            </tr>
+            <tr>
+              <th><img src="images/email.png" alt="emailicon" style="width:30px;" title="EMAIL"></th>
+              <td>tomasckyau@gmail.com</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        <div class="card">
+          <h2>TOOLS</h2>
+          <div class="skills"><img src="images/html.png" alt="htmlicon" style="width:50px;" title="HTML"></div>
+          <div class="skills"><img src="images/css-3.png" alt="cssicon" style="width:50px;" title="CSS"></div>
+          <div class="skills"><img src="images/3d-max.png" alt="3dmicon" style="width:50px;" title="AUTODESK 3D MAX"></div>
+          <div class="skills"><img src="images/swift.png" alt="swifticon" style="width:50px;" title="SWIFT"></div>
+          <div class="skills"><img src="images/java-script.png" alt="jsicon" style="width:50px;" title="JAVA SCRIPT"></div>
+          <div class="skills"><img src="images/xd.png" alt="xdicon" style="width:50px;" title="ADOBE XD"></div>
+          <div class="skills"><img src="images/after-effects.png" alt="aeicon" style="width:50px;" title="ADOBE AFTER EFFECTS"></div>
+          <div class="skills"><img src="images/premiere-pro.png" alt="pricon" style="width:50px;" title="ADOBE PREMIERE PRO"></div>
+        </div>
+        <div class="card">
+        <div class="spokenlan">
+          <h2>LANGUAGE</h2>
+          <p>English</p>
+          <p>Cantonese</p>
+          <p>Mandarin</p></div>
+          <div class="hobbies" style="padding:30px 0 80px 0;">
+            <h2>HOBBY</h2>
+            <div class="hobbiesicon"><img src="images/football.png" alt="fticon" style="width:50px;" title="FOOTBALL"></div>
+            <div class="hobbiesicon"><img src="images/piano-keyboard.png" alt="pianoicon" style="width:50px;" title="PIANO"></div>
+            <div class="hobbiesicon"><img src="images/traveling.png" alt="trlicon" style="width:50px;" title="TRAVELING"></div>
+            <div class="hobbiesicon"><img src="images/reading.png" alt="reicon" style="width:50px;" title="READING"></div>
+            <div class="hobbiesicon"><img src="images/gaming.png" alt="gamicon" style="width:50px;" title="GAMING"></div>
+            <div class="hobbiesicon"><img src="images/coding.png" alt="codeicon" style="width:50px;" title="CODING"></div>
+            <div class="hobbiesicon"><img src="images/gym.png" alt="gymicon" style="width:50px;" title="GYM"></div>
+            <div class="hobbiesicon"><img src="images/pet.png" alt="peticon" style="width:50px;" title="PET"></div></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <div class="footerstyle">
+  <p>Author: Kit<br> Last Updated: 12 Sep 2022<br></p>
+</div>
+</footer>
+    </body>
+</html>
