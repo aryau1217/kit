@@ -36,13 +36,22 @@ body {
 .wrapper {
     position: relative;
     width: auto;
-    padding: 20px;
+    padding: 16px;
 }
 
- .wrapper img {
-    border-style:groove ;
-    width: 100%;
-    height: auto;
+.wrapper img {
+    max-width: 100%; 
+    height:auto;
+    border-radius:15px; 
+    position: relative; 
+    left:20px;
+}
+
+ .comptitle img {
+    max-width: 300px; 
+    height:auto;
+    border-radius: 15px;
+    border-style:groove;
 }
 
 
@@ -50,11 +59,11 @@ body {
 /* text to be put here */
 section {
     background: #ffffff;
-    position: absolute;
+    position: auto;
     display: none;
     top: 10px;
-    right: 0;
-    left: 230px;
+    right: auto;
+    left: auto;
     width: auto;
     min-height: auto;
     color: rgb(0, 0, 0);
@@ -77,7 +86,7 @@ ul {
 
 /* section title button unselected */
 li {
-    background: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 84%);
     width: 100%;
     height: 32px;
     line-height: 32px;
@@ -253,8 +262,8 @@ transform: scale(1.15);
     </div>
     
     <div class="topnav">
-      <a href="/kit/index.html">Home</a>
-      <a href="/kit/experience.html">Experience</a>
+      <a href="/index.html">Home</a>
+      <a href="/experience.html">Experience</a>
       <!-- <a href="#">Link</a> -->
       <a href="images/KIT_Resume.pdf"download style="float:right">Resume</a>
     </div>
@@ -325,48 +334,44 @@ transform: scale(1.15);
                 <li data-rel="4">DIL HK</li>
               </ul>
             </nav>
-          
             <section>
               <article>
+                <div class="comptitle"><table>
+                <tr><td><img src="images/gentlemonster.png" alt="gentlemonster"></td></tr>
+                <tr><td><h2>Gentle Monster London <br>Concession Supervisor <br>2020 - Now</h2></td></tr>
+                </table></div>
+                <img src="images/gentlemonster2.png" alt="gentlemonster2">
                 <table>
-                <tr><th><img src="images/gentlemonster.png" alt="gentlemonster" style="height: 150px; border-radius: 15px;"></th>
-                <th><h2>Gentle Monster London <br>Concession Supervisor <br>2020 - Now</h2></th></tr>
+                  <tr><th><h3>Experience</h3></th></tr>
+                  <tr><td>A luxury eyewear brand, operating under a unique philosophy. Unique “weird beauty” store and glasses design attracts a lot of attention from design blogs.</td></tr>
                 </table>
-                <img src="images/gentlemonster2.png" alt="gentlemonster2" style="width: auto; height:300px;border-radius:15px; position: relative; left:120px;">
-                <table>
-                  <tr>
-                    <th><h3>Experience</h3></th>
-                    <th><h3>Responsibities</h3></th>
-                    <th><h3>Lessons</h3></th>
-                  </tr>
-                  <tr>
-                    <th>A luxury eyewear brand, operating under a unique philosophy. Unique “weird beauty” store and glasses design attracts a lot of attention from design blogs.</th>
-                    <th>Supervising a team of 7, delegating duties and responsibilities to sales team ensuring they deliver and complete to the best standard in a timely manner.</th>
-                    <th>Being a figure in the team. When you are a leader there is nowhere you can hide. Stand still and confront everything for the team and the business. Always understand every individual, with different people use different approaches. Admitting your weaknesses,ask for support when needed and keep learning.</th>
-                  </tr>
+                <table><tr><th><h3>Responsibities</h3></th></tr>
+                  <tr><td>Supervising a team of 7, delegating duties and responsibilities to sales team ensuring they deliver and complete to the best standard in a timely manner.</td></tr>
                 </table>
+                <table><tr><th><h3>Lessons</h3></th></tr>
+                  <tr><td>Being a figure in the team. When you are a leader there is nowhere you can hide. Stand still and confront everything for the team and the business. Always understand every individual, with different people use different approaches. Admitting your weaknesses,ask for support when needed and keep learning.</td></tr>
+                </table>
+                
               </article>
             </section>
           
             <section>
               <article>
 
-                <table>
-                  <tr><th><img src="images/mujilogo.jpeg" alt="mujilogo" style="height: 150px;border-radius: 15px;"></th>
-                  <th><h2>Muji London <br>Sales Assistant <br>2019 - 2020</h2></th></tr>
-                  </table>
-                  <img src="images/muji2.jpg" alt="muji2" style="width: auto; height: 300px;border-radius: 15px; position: relative; left:120px;">
+                <div class="comptitle"><table>
+                  <tr><td><img src="images/mujilogo.jpeg" alt="mujilogo"></td></tr>
+                  <tr><td><h2>Muji London <br>Sales Assistant <br>2019 - 2020</h2></td></tr>
+                  </table></div>
+                  <img src="images/muji2.jpg" alt="muji2">
                   <table>
-                    <tr>
-                      <th><h3>Experience</h3></th>
-                      <th><h3>Responsibities</h3></th>
-                      <th><h3>Lessons</h3></th>
-                    </tr>
-                    <tr>
-                      <th>A Japanese houseware brand offers a variety of good quality items from stationery to household items. MUJI in Japanese, translates as “no-brand, quality goods."</th>
-                      <th>Providing high level of customer service, greeting and assisting clients, responding to enquiry and carrying out product sales, performing cashier and stockroom duties</th>
-                      <th>Great Interpersonal skills & custumer Service technique. Working under pressure on the frontline and deliver the same working quality every single sec.</th>
-                    </tr>
+                    <tr><th><h3>Experience</h3></th></tr>
+                    <tr><td>A Japanese houseware brand offers a variety of good quality items from stationery to household items. MUJI in Japanese, translates as “no-brand, quality goods."</td></tr>
+                  </table>
+                  <table><tr><th><h3>Responsibities</h3></th></tr>
+                    <tr><td>Providing high level of customer service, greeting and assisting clients, responding to enquiry and carrying out product sales, performing cashier and stockroom duties</td></tr>
+                  </table>
+                  <table><tr><th><h3>Lessons</h3></th></tr>
+                    <tr><td>Great Interpersonal skills & custumer Service technique. Working under pressure on the frontline and deliver the same working quality every single sec.</td></tr>
                   </table>
 
               </article>
@@ -374,22 +379,20 @@ transform: scale(1.15);
           
             <section>
               <article>
-                <table>
-                  <tr><th><img src="images/fsml_logo.png" alt="fsml_logo" style="height: 150px;border-radius: 15px;"></th>
-                  <th><h2>Fortune Star Media Ltd<br>Sales Administrative Executive<br>2012 - 2018</h2></th></tr>
-                  </table>
-                  <img src="images/fsml2.jpg" alt="fsml2" style="width: auto; height: 300px;border-radius: 15px; position: relative; left:120px;">
+                <div class="comptitle"><table>
+                  <tr><td><img src="images/fsml_logo.png" alt="fsml_logo"></td></th>
+                  <tr><td><h2>Fortune Star Media Ltd<br>Sales Administrative Executive<br>2012 - 2018</h2></td></tr>
+                  </table></div>
+                  <img src="images/fsml2.jpg" alt="fsml2">
                   <table>
-                    <tr>
-                      <th><h3>Experience</h3></th>
-                      <th><h3>Responsibities</h3></th>
-                      <th><h3>Lessons</h3></th>
-                    </tr>
-                    <tr>
-                      <th>A film distribution company that has the largest contemporary film library includes over 700 major movies that showcase superstars such as Bruce Lee, Jackie Chan. We invested heavily on film restoration and preservation of the library. A large amount of the classic films are now fully restored and ready in HD, 2K or even 4K. At present, the Bruce Lee series are available in full 4K.</th>
-                      <th>As an administrator I worked in every single aspect of the company. Tiny as administration paper work, maintainance of the office preperties. Large as the film restoration projects by handling the entire film restoration work. I have done a few movies that took years. I also managed the the official YouTube Channel which has over 8,000 subscribers at the time, taking care of the copyright and profit of the channel.</th>
-                      <th>It was a "zero mistake allowed" working environment. Films were sold and broadcasted all over the world. Imagined showcasing content in politically sensitive countries. If you forgot to remove one dialogue or scene it could cost you a million worth business deal. I am still excited everytime thinking about this job. It's a shame I had to leave this job because I wanted to move to London to experience something new. </th>
-                    </tr>
+                    <tr><th><h3>Experience</h3></th></tr>
+                    <tr><td>A film distribution company that has the largest contemporary film library includes over 700 major movies that showcase superstars such as Bruce Lee, Jackie Chan. We invested heavily on film restoration and preservation of the library. A large amount of the classic films are now fully restored and ready in HD, 2K or even 4K. At present, the Bruce Lee series are available in full 4K.</td></tr>
+                  </table>
+                  <table><tr><th><h3>Responsibities</h3></th></tr>
+                    <tr><td>As an administrator I worked in every single aspect of the company. Tiny as administration paper work, maintainance of the office preperties. Large as the film restoration projects by handling the entire film restoration work. I have done a few movies that took years. I also managed the the official YouTube Channel which has over 8,000 subscribers at the time, taking care of the copyright and profit of the channel.</td></tr>
+                  </table>
+                  <table><tr><th><h3>Lessons</h3></th></tr>
+                    <tr><td>It was a "zero mistake allowed" working environment. Films were sold and broadcasted all over the world. Imagined showcasing content in politically sensitive countries. If you forgot to remove one dialogue or scene it could cost you a million worth business deal. I am still excited everytime thinking about this job. It's a shame I had to leave this job because I wanted to move to London to experience something new.</td></tr>
                   </table>
                   <a href="https://www.youtube.com/user/fortunestarmedia/videos">Click to see the Youtube channel</a>
               </article>
@@ -397,22 +400,20 @@ transform: scale(1.15);
           
             <section>
               <article>
-                <table>
-                  <tr><th><img src="images/DJLlogo.jpg" alt="DJLlogo" style="height: 150px; width: 300px;border-radius: 15px;"></th>
-                  <th><h2>DIL<br>Office Clerk<br>2009 - 2012</h2></th></tr>
-                  </table>
-                  <img src="images/DJL2.jpg" alt="DJL2" style="width: auto; height: 300px; border-radius: 15px; position: relative; left:120px;">
+                <div class="comptitle"><table>
+                  <tr><td><img src="images/DJLlogo.jpg" alt="DJLlogo"></td></th>
+                  <tr><td><h2>DIL<br>Office Clerk<br>2009 - 2012</h2></td></tr>
+                  </table></div>
+                  <img src="images/DJL2.jpg" alt="DJL2">
                   <table>
-                    <tr>
-                      <th><h3>Experience</h3></th>
-                      <th><h3>Responsibities</h3></th>
-                      <th><h3>Lessons</h3></th>
-                    </tr>
-                    <tr>
-                      <th>Luxury jewllery retail store based in Hong Kong. Has a strong customer base because of its focus on design, in-store & after service.</th>
-                      <th>Providing administration support to the office and showroom operation. Assisting in graphic design of showroom advertisement. Attending incoming phone calls and responding to inquiries, greeting guests.</th>
-                      <th>It was a really intense work but priceless experience at that young age for me. I worked 6 days a week and on all bank holidays I always needed to be ready. 15 hours a day when it was peak reasons. Even though it was tough but you had a great team and same target to achieve goals and objectives, you'd almost forget you are working!</th>
-                    </tr>
+                    <tr><th><h3>Experience</h3></th></tr>
+                    <tr><td>Luxury jewllery retail store based in Hong Kong. Has a strong customer base because of its focus on design, in-store & after service.</td></tr>
+                  </table>
+                  <table><tr><th><h3>Responsibities</h3></th></tr>
+                    <tr><td>Providing administration support to the office and showroom operation. Assisting in graphic design of showroom advertisement. Attending incoming phone calls and responding to inquiries, greeting guests.</td></tr>
+                  </table>
+                  <table><tr><th><h3>Lessons</h3></th></tr>
+                    <tr><td>It was a really intense work but priceless experience at that young age for me. I worked 6 days a week and on all bank holidays I always needed to be ready. 15 hours a day when it was peak reasons. Even though it was tough but you had a great team and same target to achieve goals and objectives, you'd almost forget you are working!</td></tr>
                   </table>
               </article>
             </section>
@@ -438,7 +439,7 @@ transform: scale(1.15);
 
 <footer>
   <div class="footerstyle">
-  <p>Author: Kit<br> Last Updated: 12 Sep 2022<br></p>
+  <p>Author: Kit<br> Last Updated: 22 Sep 2022<br></p>
 </div>
 </footer>
     </body>
